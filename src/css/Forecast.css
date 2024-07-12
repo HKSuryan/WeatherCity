@@ -1,0 +1,19 @@
+.forc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0 0 10px #000;
+
+}
+/* Media query for forc class such that for mobile sizes it changes flex direction to column */
+@media (max-width: 768px){
+    .forc{
+        flex-direction: column;
+    }
+}

@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AuthProvider } from './components/auth/AuthContext';
+import Login from './components/auth/Login';
+import Signup from './components/auth/SignUp';
+import Dashboard from './components/auth/Dashboard';
+import PrivateRoute from './components/auth/PrivateRoute';
+import Navbar from './components/layout/Navbar';
+import Favourite from './components/layout/Favourite';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AuthProvider>
+        <div className='wrap'>
+        <Navbar/>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route
+              path="/"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }
+            />
+              <Route
+              path="/favourite"
+              element={
+                <PrivateRoute>
+                  <Favourite />
+                </PrivateRoute>
+              }
+            />
+          </Routes>
+        </div>
+      </AuthProvider>
+    </Router>
   );
-}
+};
 
 export default App;

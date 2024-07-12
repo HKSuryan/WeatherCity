@@ -1,0 +1,21 @@
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maincont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+.err{
+    display: flex;
+    justify-content: center;
+}

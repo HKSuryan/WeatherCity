@@ -1,0 +1,37 @@
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px; 
+  }
+
+  .title {
+    flex-grow: 1;
+  }
+  
+  .navLink {
+    margin-right: 8px;
+  }
+  
+  .loginButton {
+    margin-left: 8px; 
+  }
+.appbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+
+    padding: 8px;
+}
+/* .logo{
+    display: flex;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.fav{
+    display: flex;
+    align-items: center;
+} */
