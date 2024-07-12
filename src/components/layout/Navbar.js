@@ -77,7 +77,7 @@ const Navbar = () => {
     
     <AppBar className="appbar"  position="static" style={{width: "100%"}} color="default">
       <Toolbar>
-        <img src="logo192.png" alt="Logo" className="logo" />
+        <img src="logo192.png" alt="Logo" className="logo" onClick={()=>{navigate('/')}} style={{cursor:'pointer'}}/>
         <Typography variant="h6" className="title">
           
 
