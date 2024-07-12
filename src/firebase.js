@@ -7,12 +7,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // apiKey: "AIzaSyAcoSr2DVEywQYHdEO_bYCWs-hQ7K91af4",
-  // authDomain: "weatherdashboard-4cfe3.firebaseapp.com",
-  // projectId: "weatherdashboard-4cfe3",
-  // storageBucket: "weatherdashboard-4cfe3.appspot.com",
-  // messagingSenderId: "745413176559",
-  // appId: "1:745413176559:web:cb9e363e755dd135f4bf1a"
+
 
 apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
 authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN ,
@@ -21,12 +16,6 @@ storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
 messagingSenderId:process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
 appId: process.env.REACT_APP_FIREBASE_APP_ID 
 };
-// apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-// authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN ,
-// projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-// storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-// messagingSenderId:process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-// appId: process.env.REACT_APP_FIREBASE_APP_ID 
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
