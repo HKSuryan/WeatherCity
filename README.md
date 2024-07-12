@@ -23,3 +23,4 @@ appId: process.env.REACT_APP_FIREBASE_APP_ID
 And just install the modules in the package.json and you are set to go
 
 For demo of the working project see these videos
+
