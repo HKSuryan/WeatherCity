@@ -5,6 +5,7 @@ Create a project on https://firebase.google.com/ and also a firestore database.
 
 ## openweathermap
 Create an account on https://openweathermap.org/ and get an API key.
+and change the credentials in the weatherService.js
 
 copy paste this section from the firebase and add this in the firebase.js
 
@@ -20,3 +21,5 @@ appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 And just install the modules in the package.json and you are set to go
+
+For demo of the working project see these videos
